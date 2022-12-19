@@ -1,0 +1,7 @@
+{
+  "name": "menuLateral",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
