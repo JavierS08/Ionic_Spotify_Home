@@ -16,7 +16,70 @@
             <ion-label>Home</ion-label>
           </ion-item>
         </ion-menu-toggle>
+
+        <ion-menu-toggle auto-hide="false">
+          <ion-item [routerDirection]="'root'" [routerLink]="'/tabs/tab2'">
+            <ion-icon slot="start" [name]="'search'"></ion-icon>
+            <ion-label>Buscar</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle auto-hide="false">
+          <ion-item [routerDirection]="'root'" [routerLink]="'/tabs/tab3'">
+            <ion-icon slot="start" [name]="'library-outline'"></ion-icon>
+            <ion-label>Tu biblioteca</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
       </ion-list>
+      <ion-card id="car">
+          <ion-card-content>
+            <img src="../assets/img/sharks.jfif" alt="" srcset="">
+            <div> <div>
+              <span class="titulocan">
+                Sharks
+              </span>
+            </div>
+            <div>
+              <span class="autor">Imagin Dragons</span>
+            </div>
+            <div class="spaceb">
+              <ion-progress-bar color="dark" value="0.5"></ion-progress-bar>
+            </div>
+            <div class="spaceb1">
+              <ion-note>2:07</ion-note>
+              <ion-note>-4:27</ion-note>
+            </div>
+            <div class="spaceb">
+              <div>
+                <ion-icon name="information"></ion-icon>
+              </div>
+              <div>
+                <ion-icon name="play-back"></ion-icon>
+              </div>
+              <div>
+                <ion-fab-button>
+                  <ion-icon name="play"></ion-icon>
+                </ion-fab-button>
+              </div>
+              <div>
+                <ion-icon name="play-forward"></ion-icon>
+              </div>
+              <div>
+                <ion-icon name="moon"></ion-icon>
+              </div>
+            </div>
+            <div class="spaceb">
+              <div>
+                <ion-icon name="desktop"></ion-icon>
+              </div>
+              <div>
+                <ion-icon name="share"></ion-icon>
+              </div>
+            </div>
+          </div>
+          </ion-card-content>
+      </ion-card>
+
     </ion-content>
   </ion-menu>
   <ion-router-outlet id="main-content"></ion-router-outlet>

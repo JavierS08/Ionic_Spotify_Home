@@ -6,14 +6,53 @@ ion-toolbar{
 ion-title{
     font-weight: bold;
 }
-img{
+#pos>img{
     width: 30%;
     height: auto;
 }
 #pos{
     display: flex;
     justify-content: space-evenly;
+    text-align: center;
 }
 p{
-    size: 5px ;
+    size: 5px;
+}
+ion-card>img{
+    width: 100%;
+    height: auto;
+}
+
+ion-slide{
+    width: 90% !important;
+}
+ion-fab-button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;;
+}
+ion-fab-button>img{
+    width: 200px !important;
+    height: 200px !important;;
+}
+
+@media screen and (max-width: 880px) {
+    .ocul{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 880px) {
+    ion-fab-button{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+    ion-fab-button>img{
+        width: 100% !important;
+        height: auto !important;
+    }
+    .sl{
+        width: 79% !important;
+    }
 }
